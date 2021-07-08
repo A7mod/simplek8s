@@ -35,7 +35,7 @@ There are 4 sub-types of services :
 
 Here, we've used `NodePort`, which exposes the container to the outside world. (allows access through a browser) 
 
-##### We're talking 'ports' in client-node-port.yaml :
+### We're talking 'ports' in client-node-port.yaml :
 There's no path defined as such,  like a legit connection to client 'pod'. Instead, rather than addressing any service or pods, or using a naming system; we use a system in k8s called a `label selector` system. 
 In both files, we have a column of `component:web`. [labels in client-pod, & selector in client-node-port].
 These are arbitrary and need to be same in both the config files. By this, it exposes port 3000 (here) to the outside world.
